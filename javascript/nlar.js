@@ -17,8 +17,8 @@ app.controller('myController', function($scope) {
 	$scope.modal3 = "Telegram";
 	$scope.modal4 = "Tên Tài khoản";
 	$scope.modal5 = "UID Genshin Impact";
-	$scope.linkfb = "https://fb.com/thuan.7502";
-	$scope.linkzl = "m.me/thuan.7502";
+	$scope.linkfb = "https://www.facebook.com/vthuan.1412/";
+	$scope.linkzl = "m.me/vthuan.1412";
 	$scope.linksc = "https://t.me/tkswhyred";
 	$scope.linkgm = "takeshi@gmail.com";
 	$scope.phonenumber = "849730274";
