@@ -1,0 +1,36 @@
+
+@mixin name {
+    
+}
+@mixin nomaltext {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+@mixin button {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+}
+@mixin disFlex {
+    display: flex;
+    align-items: center;
+}
+@mixin hoverIcon {
+    z-index: 3;
+    position: absolute;
+    width:max-content;
+    background-color:$hoverbgccolor;
+    padding:5px;
+    top: 180%;
+    line-height:normal;
+    right: -25%;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+}

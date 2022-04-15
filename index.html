@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <script src="https://kit.fontawesome.com/97aa991169.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/icon-youtube.png"/>
+</head>
+<body>
+    <div class="main">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="start">
+                <a href=""><i class="bar-icon icon fa-solid fa-bars"></i></a>
+                <a href="">
+                    <img src="./assets/img/youtube-icon.png" alt="" class="youtube-icon">
+                </a>
+            </div>
+            <div class="center">
+                <div class="search-bar">
+                    <div class="search-form">
+                        <div class="search-form-left">
+                            <input class="search-input" type="text" placeholder="Tìm kiếm" >
+                            <i class="keyboard-icon icon fa-regular fa-keyboard"></i>
+                            <i class="search-input-hide icon fa-solid fa-magnifying-glass">
+                                
+                            </i>
+                            <div class="search-list">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                        <div class="history-name">Macbook Air M1 2020</div>
+                                        <div class="delete-history">xoá</div>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                        <div class="history-name">Macbook Air M1 2020</div>
+                                        <div class="delete-history">xoá</div>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                        <div class="history-name">Macbook Air M1 2020</div>
+                                        <div class="delete-history">xoá</div>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                        <div class="history-name">Macbook Air M1 2020</div>
+                                        <div class="delete-history">xoá</div>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                        <div class="history-name">Macbook Air M1 2020</div>
+                                        <div class="delete-history">xoá</div>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                        <div class="history-name">Macbook Air M1 2020</div>
+                                        <div class="delete-history">xoá</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="search-form-icon icon fa-solid fa-magnifying-glass">
+                        <div class="icon-hover">
+                            Tìm kiếm
+                        </div>
+                    </i>
+                </div>
+                    <i class="voil-search-icon icon fa-solid fa-microphone">
+                        <div class="icon-hover">
+                            Tìm kiếm bằng giọng nói
+                        </div>
+                    </i>
+            </div>
+            <div class="end">
+                <i class="add-video-icon icon fa-solid fa-video">
+                    <div class="icon-hover">
+                        Tạo Video
+                    </div>
+                </i>
+                <i class="list-app-icon icon fa-solid fa-list">
+                    <div class="icon-hover">
+                        Ứng dụng khác
+                    </div>
+                </i>
+                <i class="notification-icon icon fa-regular fa-bell">
+                    <div class="icon-hover">
+                        Thông báo
+                    </div>
+                </i>
+                <img class="avata-account" src="./assets/img/takeshi.jpg" alt="" >
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div class="nav-content">
+            <!-- NAV -->
+            <div class="nav-header">
+                <div class="nav-header-list">
+                    <div class="nav-header-item">
+                        Tất cả
+                    </div>
+                    <div class="nav-header-item">
+                        Danh sách kết hợp
+                    </div>
+                    <div class="nav-header-item">
+                        Âm Nhạc
+                    </div>
+                    <div class="nav-header-item">
+                        Phim hoạt hình
+                    </div>
+                    <div class="nav-header-item">
+                        Trực tiếp
+                    </div>
+                    <div class="nav-header-item">
+                        Hài kịch ngắn
+                    </div>
+                    <div class="nav-header-item">
+                        Du lịch
+                    </div>
+                    <div class="nav-header-item">
+                        Thiên nhiên
+                    </div>
+                    <div class="nav-header-item">
+                        Bóng đá
+                    </div>
+                    <div class="nav-header-item">
+                        Trò chơi nhiều người
+                    </div>
+                    <div class="nav-header-item">
+                        Nấu ăn
+                    </div><div class="nav-header-item">
+                        Mới tải lên gần đây
+                    </div><div class="nav-header-item">
+                        Đã xem
+                    </div><div class="nav-header-item">
+                        Đề xuất mới
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="nav-list">
+                     <div class="nav-item">
+                         <i class="fa-solid icon fa-house"></i>
+                         Trang Chủ
+                     </div>
+                    <div class="nav-item">
+                        <i class="fa-solid icon fa-compass"></i>
+                        Khám Phá
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid icon fa-bolt-lightning"></i>
+                        Short
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-solid icon fa-clapperboard"></i>
+                        Kênh đăng ký
+                    </div>
+                    <div class="nav-item">
+                        <i class="fa-regular icon fa-circle-play"></i>
+                        Thư viện
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-list row">
+                <div class="content-item l-3 m-4 c-6">
+                    <a href="https://hentaiz.cc/ero-ishi-seijun-bishoujo-wo-kotoba-takumi-ni-hametai-houdai-1/" target="__blank">
+                        <img src="./assets/img/bghentaiz.png" alt="">
+                    </a>
+                    <div class="conten-video-discription">
+                        <div class="content-channel-img">
+                            <a href="https://www.hentaiz.cc">
+                                <img src="./assets/img/avtchannel.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content-video-bottom">
+                            <div class="video-title">
+                                <a href="https://hentaiz.cc/ero-ishi-seijun-bishoujo-wo-kotoba-takumi-ni-hametai-houdai-1/" target="__blank">
+                                <p>Ero Ishi Seijun Bishoujo wo Kotoba Takumi ni Hametai Houdai 1</p>    
+                                </a>
+                                
+                            </div>
+                            <div class="content-channel-name">
+                                HentaiZ
+                            </div>
+                            <div class="content-channel-time">
+                                1,1tr lượt xem - 1 năm trước
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+
+                <div class="content-item l-3 m-4 c-6">
+                    <a href="https://hentaiz.cc/ero-ishi-seijun-bishoujo-wo-kotoba-takumi-ni-hametai-houdai-2/" target="__blank">
+                        <img src="./assets/img/bghentaiz.png" alt="">
+                    </a>
+                    <div class="conten-video-discription">
+                        <div class="content-channel-img">
+                            <a href="https://www.hentaiz.cc" target="__blank">
+                                <img src="./assets/img/avtchannel.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content-video-bottom">
+                            <div class="video-title">
+                                <a href="https://hentaiz.cc/ero-ishi-seijun-bishoujo-wo-kotoba-takumi-ni-hametai-houdai-2/" target="__blank">
+                                <p>Ero Ishi Seijun Bishoujo wo Kotoba Takumi ni Hametai Houdai 2</p>    
+                                </a>
+                                
+                            </div>
+                            <div class="content-channel-name">
+                                HentaiZ
+                            </div>
+                            <div class="content-channel-time">
+                                1,5 lượt xem - 1 năm trước
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+                
+                <div class="content-item l-3 m-4 c-6">
+                    <a href="https://hentaiz.cc/toilet-no-hanako-san-vs-kukkyou-taimashi-1/" target="__blank">
+                        <img src="./assets/img/bghentaiz.png" alt="">
+                    </a>
+                    <div class="conten-video-discription">
+                        <div class="content-channel-img">
+                            <a href="https://www.hentaiz.cc">
+                                <img src="./assets/img/avtchannel.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content-video-bottom">
+                            <div class="video-title">
+                                <a href="https://hentaiz.cc/toilet-no-hanako-san-vs-kukkyou-taimashi-1/" target="__blank">
+                                <p>Toilet no Hanako-san vs Kukkyou Taimashi 1</p>    
+                                </a>
+                                
+                            </div>
+                            <div class="content-channel-name">
+                                HentaiZ
+                            </div>
+                            <div class="content-channel-time">
+                                1,5tr lượt xem - 1 năm trước
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+                <div class="content-item l-3 m-4 c-6">
+                    <a href="https://hentaiz.cc/toilet-no-hanako-san-vs-kukkyou-taimashi-2/" target="__blank">
+                        <img src="./assets/img/bghentaiz.png" alt="">
+                    </a>
+                    <div class="conten-video-discription">
+                        <div class="content-channel-img">
+                            <a href="https://www.hentaiz.cc">
+                                <img src="./assets/img/avtchannel.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content-video-bottom">
+                            <div class="video-title">
+                                <a href="https://hentaiz.cc/toilet-no-hanako-san-vs-kukkyou-taimashi-2/" target="__blank">
+                                <p>Toilet no Hanako-san vs Kukkyou Taimashi 2</p>    
+                                </a>
+                                
+                            </div>
+                            <div class="content-channel-name">
+                                HentaiZ
+                            </div>
+                            <div class="content-channel-time">
+                                1,5tr lượt xem - 1 năm trước
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+                <div class="content-item l-3 m-4 c-6">
+                    <a href="https://hentaiz.cc/seikatsu-shidou-anime-edition-1/" target="__blank">
+                        <img src="./assets/img/bghentaiz.png" alt="">
+                    </a>
+                    <div class="conten-video-discription">
+                        <div class="content-channel-img">
+                            <a href="https://www.hentaiz.cc">
+                                <img src="./assets/img/avtchannel.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content-video-bottom">
+                            <div class="video-title">
+                                <a href="https://hentaiz.cc/seikatsu-shidou-anime-edition-1/" target="__blank">
+                                <p>Seikatsu Shidou Anime Edition 1</p>    
+                                </a>
+                                
+                            </div>
+                            <div class="content-channel-name">
+                                HentaiZ
+                            </div>
+                            <div class="content-channel-time">
+                                1,9tr lượt xem - 1 năm trước
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+                <div class="content-item l-3 m-4 c-6">
+                    <a href="https://hentaiz.cc/seikatsu-shidou-anime-edition-2/" target="__blank">
+                        <img src="./assets/img/bghentaiz.png" alt="">
+                    </a>
+                    <div class="conten-video-discription">
+                        <div class="content-channel-img">
+                            <a href="https://www.hentaiz.cc">
+                                <img src="./assets/img/avtchannel.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content-video-bottom">
+                            <div class="video-title">
+                                <a href="https://hentaiz.cc/seikatsu-shidou-anime-edition-2/" target="__blank">
+                                <p>Seikatsu Shidou Anime Edition 2</p>    
+                                </a>
+                                
+                            </div>
+                            <div class="content-channel-name">
+                                HentaiZ
+                            </div>
+                            <div class="content-channel-time">
+                                1,9tr lượt xem - 1 năm trước
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+                <div class="content-item l-3 m-4 c-6">
+                    <a href="https://hentaiz.cc/iizuka-senpai-x-blazer-ane-kyun-yori-1/" target="__blank">
+                        <img src="./assets/img/bghentaiz.png" alt="">
+                    </a>
+                    <div class="conten-video-discription">
+                        <div class="content-channel-img">
+                            <a href="https://www.hentaiz.cc">
+                                <img src="./assets/img/avtchannel.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content-video-bottom">
+                            <div class="video-title">
+                                <a href="https://hentaiz.cc/iizuka-senpai-x-blazer-ane-kyun-yori-1/" target="__blank">
+                                <p>Iizuka-senpai x Blazer Ane Kyun Yori Animation 1</p>    
+                                </a>
+                                
+                            </div>
+                            <div class="content-channel-name">
+                                HentaiZ
+                            </div>
+                            <div class="content-channel-time">
+                                2,2tr lượt xem - 1 năm trước
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+
+                <div class="content-item l-3 m-4 c-6">
+                    <a href="https://hentaiz.cc/shin-hitou-meguri-1/" target="__blank">
+                        <img src="./assets/img/bghentaiz.png" alt="">
+                    </a>
+                    <div class="conten-video-discription">
+                        <div class="content-channel-img">
+                            <a href="https://www.hentaiz.cc">
+                                <img src="./assets/img/avtchannel.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content-video-bottom">
+                            <div class="video-title">
+                                <a href="https://hentaiz.cc/shin-hitou-meguri-1/" target="__blank">
+                                <p>Shin Hitou Meguri 1</p>    
+                                </a>
+                                
+                            </div>
+                            <div class="content-channel-name">
+                                HentaiZ
+                            </div>
+                            <div class="content-channel-time">
+                                1tr lượt xem - 1 năm trước
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+
+                <div class="content-item l-3 m-4 c-6">
+                    <a href="https://hentaiz.cc/oni-chichi-%e9%ac%bc%e7%88%b6-1/" target="__blank">
+                        <img src="./assets/img/bghentaiz.png" alt="">
+                    </a>
+                    <div class="conten-video-discription">
+                        <div class="content-channel-img">
+                            <a href="https://www.hentaiz.cc">
+                                <img src="./assets/img/avtchannel.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content-video-bottom">
+                            <div class="video-title">
+                                <a href="https://hentaiz.cc/oni-chichi-%e9%ac%bc%e7%88%b6-1/" target="__blank">
+                                <p>Oni chichi (鬼父) 1</p>    
+                                </a>
+                                
+                            </div>
+                            <div class="content-channel-name">
+                                HentaiZ
+                            </div>
+                            <div class="content-channel-time">
+                                0,8tr lượt xem - 1 năm trước
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+
+                <div class="content-item l-3 m-4 c-6">
+                    <a href="https://hentaiz.cc/oyasumi-sex-%e3%81%8a%e3%82%84%e3%81%99%e3%81%bf%e3%81%9b%e3%81%a3%e3%81%8f%e3%81%99-1/" target="__blank">
+                        <img src="./assets/img/bghentaiz.png" alt="">
+                    </a>
+                    <div class="conten-video-discription">
+                        <div class="content-channel-img">
+                            <a href="https://www.hentaiz.cc">
+                                <img src="./assets/img/avtchannel.png" alt="">
+                            </a>
+                        </div>
+                        <div class="content-video-bottom">
+                            <div class="video-title">
+                                <a href="https://hentaiz.cc/oyasumi-sex-%e3%81%8a%e3%82%84%e3%81%99%e3%81%bf%e3%81%9b%e3%81%a3%e3%81%8f%e3%81%99-1/" target="__blank">
+                                <p>Oyasumi Sex 1</p>    
+                                </a>
+                                
+                            </div>
+                            <div class="content-channel-name">
+                                HentaiZ
+                            </div>
+                            <div class="content-channel-time">
+                                4,1tr lượt xem - 1 năm trước
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
