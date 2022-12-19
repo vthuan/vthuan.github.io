@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="https://i.imgur.com/j8YDxXu.jpg" type="image/png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styleindex.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <title>Cửa hàng máy tính Moi - home</title>
+        <style>
+
+.submenu {
+    z-index: 1;
+    width: 250px;
+    background-color: white;
+    min-height: 80px;
+    display: none;
+    position: absolute;
+}
+#main-menu > li:hover .submenu {
+    z-index: 1;
+    display: block;
+    background-color: white;
+    color: white;
+    transform: none;
+}
+.submenu li a:hover {
+    z-index: 1;
+    background-color: #ff3d3d;
+    color: blue;
+    transform: none;
+} 
+.submenu li {
+    z-index: 1;
+        list-style: none;
+        border-radius: 1px solid #000;
+    }
+
+        .submenu li a {
+            z-index: 1;
+            font-size: 15px;
+            text-transform: none;
+            text-decoration: none;
+            color: black;
+            display: block;
+            text-align: left;
+            line-height: 15px;
+            text-indent: 12px;
+        }
+
+    #loginbtn{
+  text-transform: none;
+  text-decoration: none;
+  transform: none;
+  list-style: none;
+    border-radius: 1px solid #000;
+    color: #000;
+    font-size: 15px;
+            text-transform: none;
+            text-decoration: none;
+            color: black;
+            display: block;
+            text-align: left;
+            line-height: 15px;
+            text-indent: 12px;
+            border-radius: 1px solid #000;
+            list-style: none;
+}
+
+        </style>
+    
+</head>
+<body>
+    <div class="tieude" >
+        <h4> Thiết kết Website bán hàng máy tính</h4>
+    </div>
+  
+    
+    <div id="menugoc" >
+        <header>
+            <div class="inner-header container">
+                <a href=" " id="logo"> TEAMMOI</a>
+                <nav>
+                    <ul id="main-menu">
+                        <li> <a href=""> Trang chủ</a></li>
+                        <li>
+                            <a>Laptop</a>
+                            <ul class="submenu">
+                                <li><a href="Laptop/Macbook.html">Macbook</a></li>
+                                <li><a href="Laptop/Lenovo.html">Lenovo</a></li>
+                                <li><a href="Laptop/HP.html">HP</a></li>
+                                <li><a href="Laptop/Dell.html">Dell</a></li>
+                                <li><a href="Laptop/Asus.html">Asus</a></li>
+                                <li><a href="Laptop/Acer.html">Acer</a></li>
+                                <li><a href="Laptop/MSI.html">MSI</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li>   
+                            <a>Linh kiện</a>
+                                <ul class="submenu">
+                                    <li><a href="Components/CPU.html">CPU</a></li>
+                                    <li><a href="Components/VGA.html">Card đồ hoạ</a></li>
+                                    <li><a href="Components/Mainboard.html">Mainboard</a></li>
+                                    <li><a href="Components/Ram.html">Ram</a></li>
+                                    <li><a href="Components/Storage.html">Ổ cứng</a></li>                                   
+                                    
+                                </ul> 
+                        </li>
+
+                        <li>                            
+                            <a>Phụ kiện</a>
+                                <ul class="submenu">                                       
+                                    <li><a href="Accessories/Headphone.html">Tai Nghe</a></li>
+                                    <li><a href="Accessories/Mouse.html">Chuột</a></li>
+                                    <li><a href="Accessories/Keyboard.html">Bàn Phím</a></li>                                    
+                                    
+                                </ul> 
+                        </li>
+                    
+                        <li> <a href="https://bachkhoahanoi.edu.vn" target=__blank> Về chúng tôi</a></li>
+                      
+                        
+                    </ul>
+                   
+                </nav>
+                    <div class="loginbtn"> 
+                   <button class="button"><a id="loginbtn" href="login/login.html" >Đăng nhập</a></button>
+                     </div>
+           
+           
+            </div>
+  </div>  
+        </header>
+
+
+        <button id="cart">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            Giỏ Hàng
+        </button>
+        
+        <div id="myModal" class="modal">
+            <div class="modal-content"> <br>
+               
+          
+                <div class="modal-header">
+                    <h5 class="modal-title">Giỏ Hàng</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá</span>
+                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Tổng Cộng:</strong>
+                        <span class="cart-total-price">0VNĐ</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                </div>
+            </div>
+    </div> 
+  
+
+<!-- slider owl carousel -->
+
+    <div class="container">
+        <br> <br> <br>
+        <h1>Siêu Ưu Đãi năm 2022</h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+      
+            <div class="item active">
+              <img src="https://www.hanoicomputer.vn/media/lib/24-12-2021/msi2.jpg" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+               
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="https://www.hanoicomputer.vn/media/lib/10-12-2021/nvidia-holiday_hacom_1200.jpg" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+          
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="https://hanoicomputercdn.com/media/banner/24_Dece3f27ccba43efc8d7e039460039957bc.jpg" alt="New York" style="width:100%;">
+              <div class="carousel-caption">
+             
+              </div>
+            </div>
+            <div class="item">
+                <img src="https://hanoicomputercdn.com/media/banner/28_Oct2e6b2e45e5ba9e34f13bb5dd779ab097.png" alt="New York" style="width:100%;">
+                <div class="carousel-caption">
+                 
+                </div>
+              </div>
+        
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+<br> <br>
+
+<!-- Hien thi san pham -->
+<div class="headline">
+    <h2> Sản phẩm bán chạy </h2>
+</div>
+     <div class="laptop"> 
+        <table bgcolor="#e7e6e8" id="laptop" border="" CellSpacing="10" CellPadding="0" width="98%" align="center" >
+            <tr class="tr1" align="center">
+                <td>
+                    <section class="wrapper">
+                        <div class="products">
+                        
+                        <!-- một mặt hàng -->
+                        <div class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd" src="https://hanoicomputercdn.com/media/product/250_60213_laptop_msi_gaming_katana_gf66_11uc_641vn_den_2021_4.png">
+                            </div>
+                            <div class="content-product">
+                                <h4 class="content-product-h3">Laptop MSI Katana</h4>                       
+                                CPU: Intel Core i7 11800H 
+                                <br>RAM: 16GB <br>Ổ cứng: 1T SSD 
+                                <br>Màn hình: 16 inch QHD <br>
+                                VGD: NVIDIA RTX3050ti 4GB <br>
+              
+                                <div class="content-product-deltals">
+                                    <div class="price"> <span class="money">25.999.999đ</span> </div>                                                                            
+                                    <a button type="button" class="btn btn-cart"></i>Thêm Vào Giỏ</button></a>
+                                </div>
+                            </div>
+                        <div>    
+                </td>
+
+                <td>                              
+                    <!-- Hàng 1-Máy 2 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://hanoicomputercdn.com/media/product/250_60601_laptop_msi_creator_m16_a11ud_694vn_den_2021_5.jpg">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">Laptop MSI Creator</h4>                                
+                            CPU: Intel Core i7 11800H 
+                            <br>RAM: 16GB <br>Ổ cứng: 1T SSD 
+                            <br>Màn hình: 16 inch QHD <br>
+                            VGD: NVIDIA RTX3050ti 4GB <br>
+          
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">39.989.000đ</span> </div>                                                                    
+                                <a button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>    
+                </td>
+
+                <td>                              
+                    <!-- Hàng 1-Máy 3 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://image.cellphones.com.vn/358x/media/catalog/product/l/a/laptop-msi-gaming-gl75-leopard-10scsk-056vn-01.jpg">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">MSI Gaming GP76 Leopard</h4>                             
+                            CPU: Intel Core i7 11800H 
+                            <br>RAM: 16GB <br>Ổ cứng: 1T SSD 
+                            <br>Màn hình: 17.3 inch FHD 240Hz <br>
+                            VGD: RTX3070 8GB <br>
+          
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">51.989.000đ</span> </div>                                                                  
+                                <a button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>    
+                </td>
+
+                <td>                              
+                    <!-- Hàng 1-Máy 4 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://2url.one/b2WwW">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">ACER Gaming Nitro 5</h4>      
+                            CPU: Intel Core i5 11300H 
+                            <br>RAM: 8GB <br>Ổ cứng: 512GB SSD 
+                            <br>Màn hình: 15.6 inch FHD 144Hz <br>
+                            VGD: NVIDIA GTX1650 4G <br>
+          
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">22.989.000đ</span> </div>                                                                  
+                                <a button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>    
+                </td>
+
+            </tr>
+
+            <tr class="tr1" align="center">
+                <td>
+                    <!-- Hàng 2-Máy 1 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://hanoicomputercdn.com/media/product/250_59638_laptop_asus_vivobook_s_s533_15.png">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">Laptop ASUS Vivobook S15</h4>                                
+                            CPU: Intel Core i5 1135G7
+                            <br>RAM: 16GB <br>Ổ cứng: 1T SSD 
+                            <br>Màn hình: 15.6 inch FHD <br>
+                            VGD: MX350 2GB <br>
+
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">22.999.000đ</span> </div>                                                                          
+                                <a button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>                         
+                </td>   
+                
+                <td>
+                    <!-- Hàng 2-Máy 2 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJOyOCPvQQhK14dS1lKRjVGISYQ3Uq_mbsk-LVmSEW3GAACqNTPBIEiHqkTAP-gUoYX1Y&usqp=CAU">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">ASUS GAMING ROG ZEPHYRUS</h4>                                
+                            CPU: AMD R9 5900HS
+                            <br>RAM: 16GB <br>Ổ cứng: 512GB SSD 
+                            <br>Màn hình: 15.6 inch FHD <br>
+                            VGD: RTX 3050 4GB <br>
+
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">19.990.000đ</span> </div>                                                                          
+                                <a button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>                         
+                </td> 
+                
+                <td>
+                    <!-- Hàng 2-Máy 3 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://hanoicomputercdn.com/media/product/250_61640_laptop_hp_15_dy2093dx_4.jpg">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">LAPTOP HP 15 DY2093DX</h4>                                
+                            CPU: Intel Core i5 1135G7
+                            <br>RAM: 8GB <br>Ổ cứng: 512GB SSD 
+                            <br>Màn hình: 15.6 inch FHD 144Hz <br>
+                            VGD: Onboard <br>
+
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">17.499.000đ</span> </div>                                                                          
+                                <a button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>                         
+                </td> 
+
+                <td>
+                    <!-- Hàng 2-Máy 4 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://lh3.googleusercontent.com/UQUyMOVWsI7hplEpjl7-bTQ9SzMNblqpyDJqPawdaUnZMlvSuHCqQC4ItJ28u6yR2U4LjU7jQzSHxvEqVAFFcILyMOvS0iOe6A=w500-rw">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">LAPTOP ASUS X515MA-BR113T</h4>                                
+                            CPU: Intel Pen N5030
+                            <br>RAM: 4GB <br>Ổ cứng: 512GB SSD 
+                            <br>Màn hình: 15.6 inch FHD <br>
+                            VGD: Onboard <br>
+
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">9.499.000đ</span> </div>                                                                          
+                                <a button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>                         
+                </td> 
+
+            <tr class="tr1" align="center">
+                <td>
+                    <!-- Hàng 3-Máy 1 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://cdn.ankhang.vn/media/product/19083_laptop_msi_gf65_thin_10ue_228vn_1.jpg">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">LAPTOP MSI GF65THIN</h4>                                
+                            CPU: Intel i7 10750
+                            <br>RAM: 16GB <br>Ổ cứng: 512GB SSD 
+                            <br>Màn hình: 15.6 inch FHD 144Hz <br>
+                            VGD: NVIDIA RTX3060 6GB <br>
+
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">27.999.000đ</span> </div>                                                                          
+                                <a button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>                         
+                </td> 
+
+                <td>
+                    <!-- Hàng 3-Máy 2 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://laptopworld.vn/media/product/9894_">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">LAPTOP MSI MODERN 14</h4>                                
+                            CPU: Intel Core i7 1165g7
+                            <br>RAM: 8GB <br>Ổ cứng: 512GB SSD 
+                            <br>Màn hình: 14 inch FHD 72% NTSC  <br>
+                            VGD: Onboard <br>
+
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">21.799.000đ</span> </div>                                                                          
+                                <a  button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>                         
+                </td>
+
+                <td>
+                    <!-- Hàng 3-Máy 3 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://image.cellphones.com.vn/358x/media/catalog/product/3/4/34_6.jpg">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">MSI GAMING BRAVO 15</h4>                                
+                            CPU: AMD Ryzen 5 4600H
+                            <br>RAM: 8GB <br>Ổ cứng: 256GB SSD 
+                            <br>Màn hình: 15.6 inch FHD 144Hz  <br>
+                            VGD: Radeon RX5300 3GB <br>
+
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">18.679.000đ</span> </div>                                                                          
+                                <a button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>                         
+                </td>
+
+                <td>
+                    <!-- Hàng 3-Máy 4 -->
+                    <div class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="https://hanoicomputercdn.com/media/product/250_59744_laptop_msi_gaming_ge66_raider_11ug_210vn_2021_5.png">
+                        </div>
+                        <div class="content-product">
+                            <h4 class="content-product-h3">MSI GAMING GE66 RAIDER</h4>                                
+                            CPU: Intel Core i7 11800H
+                            <br>RAM: 16GB <br>Ổ cứng: 2TB SSD 
+                            <br>Màn hình: 15.6 inch FHD 300Hz  <br>
+                            VGD: NVIDIA RTX3979 8G <br>
+
+                            <div class="content-product-deltals">
+                                <div class="price"> <span class="money">60.589.000đ</span> </div>                                                                          
+                                <a button type="button" class="btn btn-cart"><i class="fas fa-cart-arrow-down"></i>Thêm Vào Giỏ</button></a>
+                            </div>
+                        </div>
+                    <div>                         
+                </td>
+                
+                
+            </tr>
+        </table>
+        </div>
+      
+<!--footer-->
+<div class="footer-dark">
+    <footer>
+    
+        <div class="container">
+            <div class="row">
+             
+                <div class="col-sm-6 col-md-3 item">
+
+                    <h3>Dịch vụ</h3>
+                    <ul>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Linh kiện</a></li>
+                        <li><a href="#">Phụ kiện</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Laptop</h3>
+                    <ul>
+                        <li><a href="">Công</a></li>
+                        <li><a href="">Nghệ</a></li>
+                        <li><a href="">Lõi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Moi Team</h3>
+                    <p>Wellcome to here.</p>
+                </div>
+                <div class="col item social"><a href="https://www.facebook.com/vthuan.1412/" target=__blank><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/ngNguyn13923672"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+          
+            </div>
+            <p class="copyright">Takeshi</p>
+          
+        </div>
+
+       
+    </footer>
+  
+</div>
+
+
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+    
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "103723238732714");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v12.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</body>
+<script src="../../giohang2.js"></script> 
+</html>
