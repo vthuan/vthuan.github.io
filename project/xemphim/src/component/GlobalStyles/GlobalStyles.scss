@@ -1,0 +1,85 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+a[href] {
+  color: var(--white-color);
+  text-decoration: none;
+  outline: none;
+}
+
+:root {
+  --width-default-sidebar: 220px;
+  --width-tablet-sidebar: 80px;
+
+  --width-default-sidebarforcontent: 240px;
+  --width-sidebar-mobile: 70px;
+  --primary-color: #7671f0;
+  --primary-2-color: #595cff;
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #a9a9a9;
+  --default-backgourd-color-content: #0c1216;
+  --default-backgourd-color-sidebar: #7671f0;
+  --alpha-bgc: ;
+  --padding-content-left-and-right: 34px;
+}
+
+// Reponsive
+// Tablet
+@media (max-width: 1024px) and (min-width: 740px) {
+}
+
+// Reponsive
+// Mobile
+@media (max-width: 740px) {
+}

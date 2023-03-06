@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.list {
+  max-height: 190px;
+  height: 100%;
+  overflow: hidden scroll;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--white-color);
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #e9a135;
+  }
+}
+
+.poster {
+  border-radius: 5px;
+  overflow: hidden;
+  .img {
+    width: 58px;
+    height: 86px;
+    border-radius: 5px;
+  }
+}
+
+.title {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.info {
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex: 1;
+
+  .name {
+    font-size: 13px;
+  }
+
+  .vote-user {
+    font-size: 16px;
+  }
+}
+
+.vote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-item {
+  margin-right: 5px;
+  padding: 3px 6px;
+  border-radius: 100rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}

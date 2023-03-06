@@ -1,0 +1,86 @@
+.title {
+  margin-top: 90px;
+}
+
+.container {
+  min-height: 80vh;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.item-fav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: var(--text-color);
+  cursor: pointer;
+  box-shadow: rgba(246, 246, 246, 0.35) 0px 3px 8px;
+
+  &:hover {
+    color: var(--white-color);
+    background-color: #444;
+    transition: background-color 0.2s ease-out;
+  }
+}
+
+.favourite-item {
+  width: 20%;
+}
+
+.info-movie {
+  margin: 0 16px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title-movie {
+  color: var(--white-color);
+}
+
+.tag-line {
+  color: var(--text-color);
+  margin-bottom: 12px;
+}
+
+.overview {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  color: var(--white-color);
+}
+
+.delete-btn {
+  padding: 8px 16px;
+  background-color: var(--primary-2-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+// Reponsive Mobiel
+@media (max-width: 740px) {
+  .favourite-item {
+    width: 45%;
+  }
+
+  .info-movie {
+    font-size: 14px;
+
+    .tag-line {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .delete-btn {
+    padding: 6px 10px;
+  }
+}

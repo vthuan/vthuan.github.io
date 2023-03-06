@@ -1,0 +1,5 @@
+.tippy-content {
+  font-size: 13px;
+  background-color: var(--default-backgourd-color-sidebar);
+  border-radius: 5px;
+}

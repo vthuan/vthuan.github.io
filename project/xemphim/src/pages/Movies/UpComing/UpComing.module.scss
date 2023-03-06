@@ -1,0 +1,30 @@
+.wrapper {
+  margin: 0 -14px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.load-more-btn {
+  width: 100%;
+  margin: 14px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: var(--primary-2-color);
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}

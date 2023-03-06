@@ -1,0 +1,255 @@
+.wrapper {
+  width: 50%;
+  margin: auto;
+  padding: 20px 0;
+  background: var(--primary-color);
+  border-radius: 20px;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 18px;
+  font-size: 26px;
+
+  .brand {
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 50px;
+    text-decoration: underline;
+  }
+}
+
+.table-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 0 32px;
+}
+
+.name-account,
+.email-account,
+.password-account {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.full-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.first-name-account {
+  padding-right: 5px;
+
+  .icon {
+    top: 50%;
+  }
+}
+
+.last-name-account {
+  padding-left: 5px;
+
+  .icon {
+    left: 5%;
+    top: 50%;
+  }
+}
+
+.first-name-account,
+.last-name-account {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.title-info {
+  margin-top: 20px;
+  font-size: 15px;
+  margin-left: 4px;
+  margin-bottom: 5px;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  height: 38px;
+  padding: 5px;
+  padding-left: 28px;
+  font-size: 16px;
+  border-radius: 5px;
+
+  &:focus {
+    border: 1px solid var(--primary-color);
+  }
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 60%;
+  margin-left: 5px;
+  color: var(--black-color);
+}
+.icon-fixed-username,
+.icon-fixed-email,
+.icon-fixed-password,
+.icon-fixed-pass-confirm {
+  top: 50%;
+}
+
+.see-pass {
+  position: absolute;
+  right: 2%;
+  top: 63%;
+  color: #000;
+  cursor: pointer;
+}
+
+.see-fixed {
+  top: 50%;
+}
+
+.button {
+  margin-top: 16px;
+  padding: 0 32px;
+  width: 100%;
+  height: auto;
+}
+
+.check-condition {
+  font-size: 14px;
+}
+
+.text-condition {
+  color: #dadada;
+}
+
+.check {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.create-account-btn {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  box-shadow: 1px 20px 40px -16px var(--primary-color);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #595cff;
+    color: var(--white-color);
+    transition: background-color 0.15s ease-in;
+  }
+}
+
+.link-to-signin {
+  margin-top: 20px;
+  color: #dadada;
+}
+
+.link-to-signin-btn,
+.link-to-terms-of-use,
+.link-to-privacy {
+  text-decoration: underline !important;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.alert-error {
+  color: #ff0707;
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+.alert-error::first-letter {
+  text-transform: uppercase;
+}
+
+// Reponsive
+// Mobile
+@media (max-width: 740px) {
+  .wrapper {
+    width: 100%;
+    padding: 10px 12px;
+  }
+
+  .title {
+    margin-bottom: 0;
+
+    .brand {
+      font-size: 26px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    h2 {
+      font-size: 34px !important;
+      text-decoration: underline;
+    }
+  }
+
+  .table-info {
+    width: 100%;
+  }
+
+  .password-account,
+  .email-account,
+  .name-account {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .link-to-signin {
+    font-size: 14px;
+  }
+
+  .create-account-btn {
+    margin-top: 12px;
+  }
+
+  .icon-fixed-username,
+  .icon-fixed-pass-confi {
+    top: 41%;
+  }
+
+  .icon-fixed-password {
+    top: 58%;
+  }
+}

@@ -1,0 +1,20 @@
+.wrapper {
+  background: rgb(197 50 42 / 71%);
+  border-radius: 20px;
+  padding-bottom: 6px;
+  color: var(--white-color);
+}
+
+.popular {
+  max-width: unset;
+  width: unset;
+  margin: 0 14px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px 0px 14px;
+  margin: 30px 0 10px 0;
+}
